@@ -10,12 +10,15 @@
 
 	// definite moltiplicator limitation to avoid element
 	// to be positioned outside of the window
-	var moltiplicatorW = (window.innerWidth / (el.length * 1.1)) - Math.random();
-	var moltiplicatorH = (window.innerHeight / (el.length * 1.1)) - Math.random();
+	var moltiplicatorW = (window.innerWidth / (el.length * 1.2)) - Math.random();
+	var moltiplicatorH = (window.innerHeight / (el.length * 1.2)) - Math.random();
 
 	var elPosition = [];
 
-	var setInitialPosition = function(){
+	var setInitialPosition = function(ease){
+
+		ease = ease || 'easeOut';
+
 	    snabbt(el, {
 	        position: function(i, total){
 	        	var randomW = (Math.random() * el.length) * moltiplicatorW;
@@ -29,7 +32,7 @@
 			delay: function(i) {
 			    return i * timeBox;
 			},
-			easing: 'easeOut',
+			easing: ease,
 	    });
 	}
 
@@ -48,6 +51,10 @@
 			easing: 'easeOut'
 		});
 	}
+
+	window.addEventListener('mousewheel', function(){
+		setInitialPosition('spring');
+	}, false);
 
 	setInitialPosition();
 

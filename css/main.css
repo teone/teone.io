@@ -5,37 +5,53 @@ html, body {
   min-height: 100%;
   padding: 0;
   margin: 0;
+  background-color: #01AAD3;
 }
 
-/* line 9, ../sass/main.scss */
+/* line 10, ../sass/main.scss */
 .container {
   position: absolute;
   width: 100%;
   top: 50%;
   margin-top: -9%;
+  font-family: 'Oswald', sans-serif;
 }
 
-/* line 15, ../sass/main.scss */
+/* line 18, ../sass/main.scss */
+h1, h3 {
+  color: #fff;
+}
+
+/* line 22, ../sass/main.scss */
 h1 {
   text-align: center;
+  font-weight: 700;
 }
 
-/* line 19, ../sass/main.scss */
+/* line 27, ../sass/main.scss */
 h3 {
   width: 45%;
   float: left;
   text-align: right;
   padding-left: 5%;
+  font-weight: 300;
 }
 
-/* line 26, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 h3 + h3 {
   text-align: left;
   padding-right: 5%;
   padding-right: 0;
 }
 
-/* line 32, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
 i.fa {
   font-size: 3em;
+}
+
+/* line 45, ../sass/main.scss */
+a {
+  display: inline-block;
+  color: #0182AA;
+  text-decoration: none;
 }

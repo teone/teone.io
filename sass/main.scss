@@ -4,6 +4,7 @@ html, body{
 	min-height: 100%;
 	padding: 0;
 	margin: 0;
+	background-color: #01AAD3;
 }
 
 .container{
@@ -11,9 +12,16 @@ html, body{
 	width: 100%;
 	top: 50%;
 	margin-top: -9%;
+	font-family: 'Oswald', sans-serif;
 }
+
+h1, h3 {
+	color: #fff;
+}
+
 h1{
 	text-align: center;
+	font-weight: 700;
 }
 
 h3{
@@ -21,6 +29,7 @@ h3{
 	float: left;
 	text-align: right;
 	padding-left: 5%;
+	font-weight: 300;
 }
 
 h3 + h3{
@@ -31,4 +40,10 @@ h3 + h3{
 
 i.fa{
 	font-size: 3em;
+}
+
+a{
+	display: inline-block;
+	color: #0182AA;
+	text-decoration: none;
 }
